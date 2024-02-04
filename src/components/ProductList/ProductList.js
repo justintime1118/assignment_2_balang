@@ -4,8 +4,8 @@ import ProductListItem from "../ProductListItem";
 function ProductList({ listTitle, productList }) {
   return (
     <section>
-      <h2>{listTitle}</h2>
-      <ul>
+      <h1 className=" text-2xl p-8 font-bold text-center ">{listTitle}</h1>
+      <ul className="grid grid-cols-4 gap-4">
         {productList &&
           productList.map((product) => (
             <li key={product.id}>
